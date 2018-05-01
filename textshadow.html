@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Text Shadow</title>
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<link rel="stylesheet" href="textshadow.css" type="text/css">
+	<style>
+		h1{
+			text-shadow:2px 2px 3px yellow;
+		}
+		.a{
+			text-shadow:2px 2px 3px #ff0000;
+		}
+		.b{
+			text-shadow:2px 2px 3px hsl(150,90%,20%);
+		}
+		.c{
+			text-shadow:2px 2px 3px hsl(150,90%,20%,0.7);
+		}
+		.d{
+			text-shadow:2px 2px 3px rgb(255,0,0);
+		}
+		.e{
+			text-shadow:2px 2px 3px rgb(255,0,0,0.7);
+		}
+		.left{
+			text-shadow:-2px -2px 3px rgb(255,0,0,0.7);
+		}
+		.multiple{
+			text-shadow:2px 2px 3px yellow , 10px 10px 4px blue;
+		}
+		.emb{
+			background-color: #222;
+			color:#333;
+			text-shadow:-1px -1px 0px rgba(255,255,255,0.3) ,1px 1px 0px rgba(0, 0, 0, 0.8);
+		}
+	</style>
+</head>
+<body>
+
+	<h1>I am  Heading</h1>
+	<p class="a">my color is in hex</p>
+	<p class="b">my color is in hsl</p>
+	<p class="c">my color is in hsla</p>
+	<p class="d">my color is in rgb</p>
+	<p class="e">my color is in rgba</p>
+	<h1 class="left">I have shadow on left and top</h1>
+	<h1 class="emb">my shadow is embossed</h1>
+	<h1 class="multiple">I have multiple text shadows</h1>
+
+</body>
+</html>
